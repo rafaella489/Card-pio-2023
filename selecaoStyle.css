@@ -1,0 +1,77 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFE3B9;
+}
+
+header {
+    height: 60px;
+    background-color: #EF9000;
+}
+
+footer {
+    height: 60px;
+    background-color: #EF9000;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+
+}
+
+.opcaoCardapio {
+    width: 661px;
+    max-width: 661px;
+    height: 400px;
+    max-height: 400px;
+    position: relative;
+    top: 40px;
+    left: 56px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.alimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    max-height: 380px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label {}
+
+label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    outline: 5px solid #ffffff;
+    outline-offset: -5px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-color: rgb(10, 10, 10);
+}
